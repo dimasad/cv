@@ -1,0 +1,60 @@
+\documentclass[a4paper, 11pt, oneside]{memoir}
+
+\usepackage{newpxtext,newpxmath}
+\usepackage[hidelinks]{hyperref}
+
+%%% Memoir style customizations %%%
+
+% Page and margin settings
+\setlrmarginsandblock{0.85in}{0.85in}{*}
+\setulmarginsandblock{0.85in}{0.85in}{*}
+\checkandfixthelayout 
+
+% Header and footer
+\copypagestyle{cv}{plain}
+\makeoddfoot{cv}{Dimas A.~A.~Dutra}{\textit{Curriculum Vitae}}{\thepage}
+\pagestyle{cv}
+
+% Sectioning
+\setsecnumdepth{book}
+\newcommand{\ruledsec}[1]{%
+  \Large\scshape\raggedright #1 \par\vspace{-1ex}\noindent\hrulefill
+}
+\setsecheadstyle{\ruledsec}
+
+\begin{document}
+\thispagestyle{plain}
+
+\begin{center}
+  {
+    \LARGE \bfseries \scshape 
+    Dimas Abreu Archanjo Dutra
+  }
+  \\[1ex]
+  \small
+  \texttt{\href{mailto:dimas.dutra@mail.wvu.edu}{dimas.dutra@mail.wvu.edu}}
+  \itshape\qquad
+  +1~(304)~777-9325
+  \\
+  1306 Evansdale Drive, Morgantown, WV, 26506-6106
+\end{center}
+
+\section{Current Positions}
+\textbf{Assistant Professor} (on leave), 
+Department of Mechanical Engineering
+\hfill 2015--present
+\\
+Universidade Federal de Minas Gerais (UFMG), Brazil.
+\\[1ex]
+\textbf{Postdoctoral Fellow}, 
+Department of Mechanical and Aerospace Engineering
+\hfill 2021--present
+\\
+West Virginia University (WVU), Morgantown, WV.\\
+
+
+\clearpage
+asfdsadfs
+
+
+\end{document}
