@@ -3,7 +3,19 @@
 \usepackage{newpxtext,newpxmath}
 \usepackage[hidelinks]{hyperref}
 
-%%% Memoir style customizations %%%
+\usepackage{enumitem}
+
+\usepackage{siunitx}
+\usepackage[style=authoryear-comp, sorting=ydnt, giveninits=true, backend=biber,
+            useprefix=true, uniquename=false, uniquelist=false,
+            maxnames=2, maxbibnames=8, natbib]{biblatex}
+  \renewbibmacro{in:}{%
+    \ifentrytype{article}{}{\printtext{\bibstring{in}\intitlepunct}}%
+  }
+  \addbibresource{mypub.bib}
+
+
+%%% Memoir class style customizations %%%
 
 % Page and margin settings
 \setlrmarginsandblock{0.85in}{0.85in}{*}
@@ -40,18 +52,78 @@
 \end{center}
 
 \section{Current Positions}
-\textbf{Assistant Professor} (on leave), 
-Department of Mechanical Engineering
-\hfill 2015--present
-\\
-Universidade Federal de Minas Gerais (UFMG), Brazil.
-\\[1ex]
-\textbf{Postdoctoral Fellow}, 
-Department of Mechanical and Aerospace Engineering
-\hfill 2021--present
-\\
-West Virginia University (WVU), Morgantown, WV.\\
 
+\begin{description}
+\item \textbf{Assistant Professor} (on leave), 
+  Department of Mechanical Engineering
+  \hfill 2015--present
+  \\
+  Universidade Federal de Minas Gerais (UFMG), Brazil.
+
+\item \textbf{Postdoctoral Fellow}, 
+  Department of Mechanical and Aerospace Engineering
+  \hfill 2021--present
+  \\
+  West Virginia University (WVU), Morgantown, WV.
+\end{description}
+
+\section{Education}
+\begin{description}
+\item Ph.D. in Electrical Engineering \hfill 2011--2014
+  \\
+  Universidade Federal de Minas Gerais (UFMG), Brazil
+  \\
+  \emph{Dissertation:} Maximum \emph{a posteriori} joint state path and
+  parameter estimation in stochastic differential equations.
+  \emph{Advisors:} Luis Antonio Aguirre and Bruno Otávio Soares Teixeira.
+
+\item B.Sc. in Control and Automation Engineering
+  \hfill 2005--2010
+  \\
+  Universidade Federal de Minas Gerais (UFMG), Brazil
+  \\
+  \textit{Senior thesis:} System identification of a light aircraft.
+  \emph{Advisor:} Luis Antonio Aguirre.
+\item Foreign Exchange Student \hfill 2009--2010
+  \\
+  University of Wisconsin--Madison, College of Engineering
+\item Technical High School: Industrial Instrumentation \hfill 2002--2004
+  \\
+  Colégio Técnico do Centro Pedagógico da UFMG (Coltec), Brazil
+\end{description}
+
+\section{Selected list of publications}
+\nocite{*}
+
+\subsection{Journal Papers}
+\printbibliography[
+  type=article, heading=none,
+]
+
+\subsection{Conference Papers}
+\printbibliography[
+  type=inproceedings, heading=none,
+]
+
+\section{Citation database profiles}
+\begin{description}
+\item[Google Scholar] 
+  \url{https://scholar.google.com/citations?user=3c_a2awAAAAJ}\newline
+  Publications:~10, Citations:~36, H-index:~4,
+\item[Publons]
+  \url{https://publons.com/researcher/AAF-9208-2020}\newline
+  Publications:~8, Citations:~14, H-index:~3, Verified Reviews:~12, 
+  Excellent Reviewer
+\item[Scopus]
+  \url{https://www.scopus.com/authid/detail.uri?authorId=24775609400}\newline
+  Publications:~7, Citations:~27, H-index:~3
+\item[ORCID]
+  \url{https://orcid.org/0000-0001-8202-744X}\newline
+  Publications:~8
+\end{description}
+
+\noindent
+Citation counts and metrics accessed November 14, 2021.
 
 \clearpage
 asfdsadfs
