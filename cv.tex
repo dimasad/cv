@@ -6,14 +6,15 @@
 \usepackage{enumitem}
 
 \usepackage{siunitx}
-\usepackage[style=authoryear-comp, sorting=ydnt, giveninits=true, backend=biber,
+\usepackage[style=authoryear-comp, sorting=ydnt, giveninits=true, 
             useprefix=true, uniquename=false, uniquelist=false,
-            maxnames=2, maxbibnames=8, natbib]{biblatex}
+            maxnames=2, maxbibnames=8, backend=biber]{biblatex}
   \renewbibmacro{in:}{%
     \ifentrytype{article}{}{\printtext{\bibstring{in}\intitlepunct}}%
   }
   \addbibresource{mypub.bib}
 
+\usepackage{etoolbox}
 
 %%% Memoir class style customizations %%%
 
@@ -33,6 +34,11 @@
   \Large\scshape\raggedright #1 \par\vspace{-1ex}\noindent\hrulefill
 }
 \setsecheadstyle{\ruledsec}
+\setaftersecskip{4pt}
+
+% Customlists
+\newlist{shortdesc}{description}{1}
+\setlist[shortdesc]{itemsep=0mm}
 
 \begin{document}
 \thispagestyle{plain}
@@ -149,8 +155,165 @@
 \noindent
 Citation counts and metrics accessed January~9, 2022.
 
-\clearpage
-asfdsadfs
+\section{Teaching Experience}
+\begin{description}
+\item {2015--2021}
+{Modelling of dynamical systems (Ph.D. and M.Sc. in Mechanical Engineering)}
+\item {2015--2021}
+{Industrial electronics, theory and lab (B.Sc. in Aerospace Engineering)}
+\item {2019--2021}{Control theory (B.Sc. in Aerospace Engineering)}
+\item {2016--2021}{Flight mechanics (B.Sc. in Aerospace Engineering)}
+\item {2015--2018}{Foundations of control theory (B.Sc. in Mechanical Engineering)}
+\item {2015}
+{Advanced studies in embedded systems, lab (B.Sc. in Aerospace Engineering)}
+\end{description}
+
+\section{Academic advising}
+\subsection{Ph.D. in Mechanical Engineering}
+\begin{shortdesc}
+\item {\textnormal{J.L.C.~Reis}}:
+\hfill 2017--2021\\
+Theoretical and numerical formulation of optimal control with different
+approaches to model aircraft dynamics (coadvisor)
+\end{shortdesc}
+
+\subsection{M.Sc. in Mechanical Engineering}
+\begin{shortdesc}
+\item{\textnormal{C.P.S.~Machado:}} 
+{Differentiation algorithms for system identification}
+\hfill{2018--present}
+
+\item {\textnormal{I.B.~Backes}}:
+  {Studies of a $H_\infty$-controlled active suspension system}{}{}{}
+  \hfill {2017--2019}
+
+\item {\textnormal{J.L.C.~Reis}}:
+  {Aircraft Dynamic Analysis Methods Using Flight Tests}{}{}{}
+  \hfill {2015--2016}
+\end{shortdesc}
+
+\subsection{Undergraduate senior thesis}
+\begin{shortdesc}
+\item
+  B.Sc.~in Aerospace Engineering (13 th.) \hfill {2015--2021}
+\item
+  B.Sc.~in Mechanical Engineering (6 th.) \hfill {2015--2021}
+\item
+  B.Sc.~in Control and Automation Engineering (1 th.) \hfill {2015--2021} 
+\item
+  B.Sc.~in Electrical Engineering (1 th.) \hfill {2015--2021} 
+\end{shortdesc}
+
+\subsection{Collegiate design competition teams}
+\begin{shortdesc}
+\item {SAE Brazil AeroDesign} \hfill 2016--2021
+\item
+{Shell Eco Marathon Americas at Sonoma, CA, United States (coadvisor)}
+\hfill {2018}%
+\item {IV Brazilian Mini Rocket Festival at Curitiba, Brazil (coadvisor)}
+  \hfill {2017}
+\end{shortdesc}
+
+\section{Membership and Participation in Academic Committees}
+\subsection{Ph.D. qualifying exams}
+\begin{shortdesc}
+\item {Ph.D. in Mechanical Engineering (1 committee)} \hfill {2020}
+\item {Ph.D. in Electrical Engineering (1 committee)} \hfill {2017}
+\end{shortdesc}
+
+\subsection{Masters theses}
+\begin{shortdesc} 
+\item {M.Sc. in Mechanical Engineering (4 committees)} \hfill {2016--2019}
+\item {M.Sc. in Electrical Engineering (3 committees)} \hfill {2016--2018}
+\end{shortdesc}
+
+\subsection{Undergraduate senior theses}
+\begin{shortdesc} 
+\item {B.Sc. in Aerospace Engineering (22 committees)} \hfill {2016--2021}
+\item {B.Sc. in Mechanical Engineering (14 committees)} \hfill {2015--2019}
+\item {B.Sc. in Control and Automation Engineering (3 committees)} \hfill {2016--2021}
+\item {B.Sc. in Electrical Engineering (1 committee)} \hfill {2017}
+\end{shortdesc}
+\subsection{Faculty search committees} 
+\begin{shortdesc}
+\item {Adjunct Professor at UFMG (2 committees)} \hfill {2019, 2020}
+\item {%
+  Assistent Professor at Universidade Federal de Ouro Preto, Brazil
+  (1 committee)
+}  \hfill {2017}
+\end{shortdesc}
+
+\subsection{Scientific event organizing committee}
+\begin{shortdesc}
+\item %
+{1st International Congress of Engines, Fuels and Combustion,
+ Belo Horizonte, Brazil} \hfill {2016}
+\end{shortdesc}
+
+\section{Academic Service and Administration}
+\begin{shortdesc} 
+\item {%
+  Elected representative in the council of the Department of Mechanical 
+  Engineering.%
+} \hfill {2021}
+\item {%
+  Deputy representative in the council of the Department of Mechanical 
+  Engineering.%
+} \hfill {2016--2018}
+\item {%
+  Faculty representative in the B.Sc. in Aerospace  Engineering council.
+} \hfill {2017--2020}
+\item {%
+  Faculty representative in the B.Sc. in Control and Automation Engineering
+  council.
+} \hfill {2015--2021}
+\item {%
+  Student representative in the Electrical Engineering 
+  Postgraduate Program council.
+} \hfill {2012}
+\item {%
+  Student representative in the B.Sc. in Control and Automation Engineering
+  council.
+} \hfill {2010}
+\end{shortdesc}
+
+\section{Contracts and Grants}
+\subsection{Grants}
+\begin{shortdesc} 
+\item {SAE Aero Design Student Competition Team Funding}
+{Santos Dumont Program}
+{ \newline Funding: 
+  Research Foundation of the State of Minas Gerais (FAPEMIG/Brazil)
+  \newline
+  R\$\,67,900.81 (approx.\ US\$\,12,000.00)
+}{}{}
+ \hfill {2021}
+
+\item {Data Acquisition for Flight Testing UAVs}
+{Faculty Startup Package Program}
+{\newline Funding: UFMG --- R\$\,4,800.00 (approx.\ US\$\,1,500.00)}{}{}
+\hfill {2017}
+\end{shortdesc}
+
+\subsection{Contracts}
+\begin{shortdesc} 
+\item {Integration of a Rail Car Data Acquisition System with the Cloud}
+{}{\newline Funding: Aeron Aeronautical Engineering ---
+  R\$\,5,400.00 (approx.\ US\$\,1,660.00)}{}{}
+ \hfill {2017}
+
+\item 
+{Data Acquisition for Certification of a Light Sport Aviation Aircraft}{}
+{\newline Funding: JAZZ Aeronautical Engineering --- 
+ R\$\,13,600.00 (approx.\ US\$\,4,200.00)}{}{}
+\hfill {2016}
+\end{shortdesc}
 
 
 \end{document}
+%%% Local Variables:
+%%% eval: (adaptive-wrap-prefix-mode t)
+%%% eval: (visual-line-mode t)
+%%% eval: (linum-mode t)
+%%% TeX-engine: luatex
+%%% End:
